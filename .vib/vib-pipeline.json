@@ -9,7 +9,7 @@
         },
         "actions": [
           {
-            "action_id": "action123"
+            "action_id": "helm-package"
           }
         ]
       },
