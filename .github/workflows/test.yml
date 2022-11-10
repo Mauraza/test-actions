@@ -3,7 +3,7 @@ on: # rebuild any PRs and main branch changes
   pull_request:
   push:
     branches:
-      - main
+      - parameters-plain-test-file
 env:
   CSP_API_URL: https://console.cloud.vmware.com
   CSP_API_TOKEN: ${{ secrets.CSP_API_TOKEN }}
@@ -19,5 +19,6 @@ jobs:
           path: '/'
           config: '.vib'
           pipeline: 'vib-pipeline.json'
+          runtime_parameters_file: ${{ needs.get-chart.outputs.chart }}/runtime-parameters.yaml
           retry-count: 5
           backoff-intervals: '[100, 500, 1000, 2000, 5000]'
