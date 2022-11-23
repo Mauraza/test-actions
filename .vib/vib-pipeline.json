@@ -3,8 +3,8 @@
       "package": {
         "context": {
           "resources": {
-            "url": "github.com/bitnami/cha234rts/tarball/1bc9cb647ff60b2cf294cdd81a8ae29b32cd8703",
-            "path": "/bitnami/word234press"
+            "url": "https://github.com/bitnami/charts/tarball/ad1d8a5fd977ecd82e82ec8a2530d0d2522a8ed0",
+            "path": "/bitnami/wordpress"
           }
         },
         "actions": [
@@ -16,8 +16,8 @@
       "verify": {
         "context": {
           "resources": {
-            "url": "github.com/bitnami/charts/tarball/1bc9cb647ff60b2cf294cdd81a8ae29b32cd8703",
-            "path": "/bitnami/wordpress"
+            "url": "https://gitlab.eng.vmware.com/api/v4/projects/76399/repository/archive.tar?sha=bfe743ad5a2134746c36badb9168fbdbd22afbd8&private_token=p8VKirPPUsb9-TxyghTf",
+            "path": "/examples/wordpress"
           },
           "runtime_parameters": "test",
           "application": {
