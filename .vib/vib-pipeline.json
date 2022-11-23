@@ -19,7 +19,7 @@
             "url": "github.com/bitnami/charts/tarball/1bc9cb647ff60b2cf294cdd81a8ae29b32cd8703",
             "path": "/bitnami/wordpress"
           },
-          "runtime_parameters": "",
+          "runtime_parameters": "test",
           "application": {
             "kind": "HELM",
             "details": {
@@ -35,8 +35,7 @@
           {
             "action_id": "trivy",
             "params": {
-              "threshold": "CRITICAL",
-              "vuln_type": ["OS"]
+              "threshold": "IGNORE_ALL"
             }
           }
         ]
