@@ -14,11 +14,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: vmware-labs/vmware-image-builder-action@main
+      - uses: vmware-labs/vmware-image-builder-action@parameters-plain-test-file-2
         with:
           path: '/'
           config: '.vib'
           pipeline: 'vib-pipeline.json'
-          runtime-parameters-file: ${{ needs.get-chart.outputs.chart }/runtime-parameters-file.yaml
+          runtime-parameters-file: 'runtime-parameters-file.yaml'
           retry-count: 5
           backoff-intervals: '[100, 500, 1000, 2000, 5000]'
