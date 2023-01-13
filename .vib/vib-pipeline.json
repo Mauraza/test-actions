@@ -23,12 +23,6 @@
           "path": "/bitnami/wordpress"
         },
         "runtime_parameters": "",
-        "target_platform": {
-          "target_platform_id": "{VIB_ENV_TARGET_PLATFORM}",
-          "size": {
-            "name": "S4"
-          }
-        }
       },
       "actions": [
         {
