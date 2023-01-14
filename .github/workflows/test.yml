@@ -14,8 +14,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: vmware-labs/vmware-image-builder-action@main
-        with:
+      - uses: vmware-labs/vmware-image-builder-action@parameters-plain-test-file-2
+        with:parameters-plain-test-file-2
           path: '/'
           config: '.vib'
           pipeline: 'vib-pipeline.json'
